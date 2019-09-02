@@ -15,16 +15,8 @@
 			"name": "string.quoted.single._8085"
 		},
 		{
-			"match": ";[^\n]*\n",
-			"name": "comment.line.semicolon"
-		},
-		{
-			"match": "\\b([0-9a-fA-F]+[hH])\\b",
-			"name":"constant.numeric.hex"
-		},
-		{
-			"match": "\\b[0-9]+\\b",
-			"name":"constant.numeric.dec"
+			"match": "\\b([0-9][0-9a-fA-F]+[hHbBdDoO]?)\\b",
+			"name":"constant.numeric"
 		},
 		{
 			"match": "\\b[A-Za-z0-9_]+\\s*\\:",
