@@ -1,0 +1,15 @@
+.vscode/**
+.vscode-test/**
+.gitignore
+vsc-extension-quickstart.md
+*.vsix
+images/*
+syntaxes/ops.txt
+syntaxes/OP.TXT
+images/**
+images/
+images
+programmatic-language-features.md
+vsc-extension-quickstart.md
+CHANGELOG.md
+*.txt

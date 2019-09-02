@@ -1,0 +1,43 @@
+{
+    "name": "8085-assembly",
+    "displayName": "8085 Assembly",
+    "publisher": "AvyChanna",
+    "description": "Syntax Highlighting for 8085 Assembly Programs",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/AvyChanna/VSCode-8085-Assembly.git"
+    },
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.37.0"
+    },
+    "categories": [
+        "Programming Languages",
+        "Other"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "assembly",
+                "aliases": [
+                    "8085 Assembly",
+                    "Assembly",
+                    "8085",
+                    "asm"
+                ],
+                "extensions": [
+                    ".asm"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "assembly",
+                "scopeName": "source.asm._8085",
+                "path": "./syntaxes/assembly.tmLanguage.json"
+            }
+        ]
+    },
+    "devDependencies": {}
+}

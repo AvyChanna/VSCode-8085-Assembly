@@ -1,0 +1,47 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "assembly",
+	"patterns": [
+		{
+			"match": ";.*$",
+			"name":"comment.line"
+		},
+		{
+			"match": "\"[^\"]*\"",
+			"name": "string.quoted.double._8085"
+		},
+		{
+			"match": "'[^']*'",
+			"name": "string.quoted.single._8085"
+		},
+		{
+			"match": ";[^\n]*\n",
+			"name": "comment.line.semicolon"
+		},
+		{
+			"match": "\\b([0-9a-fA-F]+[hH])\\b",
+			"name":"constant.numeric.hex"
+		},
+		{
+			"match": "\\b[0-9]+\\b",
+			"name":"constant.numeric.dec"
+		},
+		{
+			"match": "\\b[A-Za-z0-9_]+\\s*\\:",
+			"name": "entity.name.function"
+		},
+		{
+			"match": "\\b([Aa]|[Bb]|[Cc]|[Dd]|[Ee]|[Ff]|[Hh]|[Ii]|[Ll]|[Mm]|[Ss][Pp]|[Pp][Ss][Ww])\\b",
+			"name": "variable.name"
+		},
+		{
+			"match":"\\b([Aa][Cc][Ii]|[Aa][Dd][Cc]|[Aa][Dd][Dd]|[Aa][Dd][Ii]|[Aa][Nn][Aa]|[Aa][Nn][Ii]|[Cc][Aa][Ll][Ll]|[Cc][Cc]|[Cc][Mm]|[Cc][Mm][Aa]|[Cc][Mm][Cc]|[Cc][Mm][Pp]|[Cc][Nn][Cc]|[Cc][Nn][Zz]|[Cc][Pp]|[Cc][Pp][Ee]|[Cc][Pp][Ii]|[Cc][Pp][Oo]|[Cc][Zz]|[Dd][Aa][Aa]|[Dd][Aa][Dd]|[Dd][Cc][Rr]|[Dd][Cc][Xx]|[Dd][Ii]|[Ee][Ii]|[Hh][Ll][Tt]|[Ii][Nn]|[Ii][Nn][Rr]|[Ii][Nn][Xx]|[Jj][Cc]|[Jj][Mm]|[Jj][Mm][Pp]|[Jj][Nn][Cc]|[Jj][Nn][Zz]|[Jj][Pp]|[Jj][Pp][Ee]|[Jj][Pp][Oo]|[Jj][Zz]|[Ll][Dd][Aa]|[Ll][Dd][Aa][Xx]|[Ll][Hh][Ll][Dd]|[Ll][Xx][Ii]|[Mm][Oo][Vv]|[Mm][Vv][Ii]|[Nn][Oo][Pp]|[Oo][Rr][Aa]|[Oo][Rr][Ii]|[Oo][Uu][Tt]|[Pp][Cc][Hh][Ll]|[Pp][Oo][Pp]|[Pp][Uu][Ss][Hh]|[Rr][Aa][Ll]|[Rr][Aa][Rr]|[Rr][Cc]|[Rr][Ee][Tt]|[Rr][Ii][Mm]|[Rr][Ll][Cc]|[Rr][Mm]|[Rr][Nn][Cc]|[Rr][Nn][Zz]|[Rr][Pp]|[Rr][Pp][Ee]|[Rr][Pp][Oo]|[Rr][Rr][Cc]|[Rr][Ss][Tt]|[Rr][Zz]|[Ss][Bb][Bb]|[Ss][Bb][Ii]|[Ss][Hh][Ll][Dd]|[Ss][Ii][Mm]|[Ss][Pp][Hh][Ll]|[Ss][Tt][Aa]|[Ss][Tt][Aa][Xx]|[Ss][Tt][Cc]|[Ss][Uu][Bb]|[Ss][Uu][Ii]|[Xx][Cc][Hh][Gg]|[Xx][Rr][Aa]|[Xx][Rr][Ii]|[Xx][Tt][Hh][Ll])\\b",
+			"name":"keyword.other"
+		},
+		{
+			"match": "\\b([Cc][Pp][Uu]|[Hh][Oo][Ff]|[Ee][Qq][Uu]|[Oo][Rr][Gg])\\b",
+			"name":"meta.preprocessor"
+		}
+	],
+	"scopeName": "source.asm._8085"
+}
